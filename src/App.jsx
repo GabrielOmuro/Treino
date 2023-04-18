@@ -1,16 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import HelloWorld from './components/HelloWorld'
+import FaleMeuNome from './components/FaleMeuNome'
 
 function App() {
 
-    const nome = "Gabriel"
-    const turma = "91"
+    const nome = "Andril"
 
   return (
     <div className="App">
       <h1>Seu nome é {nome}</h1>
-      <h1>Sua turma é {turma}</h1>
+      <HelloWorld/>
+      <FaleMeuNome nome="Matias"/>
+      <FaleMeuNome nome="Arthur"/>
+      <FaleMeuNome nome={nome}/>
     </div>
   )
 }
